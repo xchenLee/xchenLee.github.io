@@ -12,8 +12,11 @@ categories: jekyll github
 跟着页面的 `User or organization site` 走完五个步骤就建好并浏览自己建的网站了
 
 接下来就是安装和使用`jekyll`了
+
 1.安装前需要电脑装有python，gem
+
 2.然后开始安装gem功能包
+
 {% highlight ruby %}
 gem install jekyll   //jekyll
 gem install kramdown //markdown 解析包
@@ -21,23 +24,23 @@ gem install pygments.rb //代码高亮
 gem install liquid
 {% endhighlight %}
 
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
-
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
+3.安装完成之后，进入之前五个步骤中拉取repository的文件夹，执行命令
 
 {% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+jekyll new . --force //直接覆盖五个步骤中新建的index.html
+//如果是想新建一个空的
+jekyll new name
+//然后编辑
+jekyll buid
+//运行
+jekyll serve //打开 localhost:4000就可以看到了
+
+//这个时候就可以提交了
+git add .
+git commit -m "commit msg"
+git push -u origin master
+//然后打开你Github域名网站就可以访问了
 {% endhighlight %}
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
-[jekyll-docs]: http://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
 [官方教程]: https://pages.github.com
