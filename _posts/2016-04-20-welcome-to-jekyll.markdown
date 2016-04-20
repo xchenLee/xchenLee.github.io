@@ -12,6 +12,14 @@ categories: jekyll github
 跟着页面的 `User or organization site` 走完五个步骤就建好并浏览自己建的网站了
 
 接下来就是安装和使用`jekyll`了
+1.安装前需要电脑装有python，gem
+2.然后开始安装gem功能包
+{% highlight ruby %}
+gem install jekyll   //jekyll
+gem install kramdown //markdown 解析包
+gem install pygments.rb //代码高亮
+gem install liquid
+{% endhighlight %}
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
