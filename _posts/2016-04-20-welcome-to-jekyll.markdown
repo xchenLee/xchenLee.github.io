@@ -5,9 +5,13 @@ date:   2016-04-20 16:56:51 +0800
 categories: jekyll github
 ---
 
-今天在网上浏览技术帖子，无意看到关于Github建站，之前有过自己做blog的想法，最主要就是懒，现在通过查资料，傻瓜式的搭起来了，就先写一篇`post`
+今天在网上浏览技术帖子，无意看到关于Github建站.就动手做了一下，现在通过查资料搭起来了，先写一篇`post`
 
-关键词搜了很多文章，怎么说呢，指引性并不强。其实很多技术上的东西就是动手去做，这些文章跳跃性的纪录其实对初学者很不友好。最后还是看了 `Github` [官方教程] ，写的很清晰
+关键词搜了很多文章，指引性并不强。其实很多技术上的东西就是动手去做，这些文章跳跃性的纪录其实对初学者并不友好。最后还是找到了 `Github` [官方教程] 写的很清晰
+
+跟着页面的 `User or organization site` 走完五个步骤就建好并浏览自己建的网站了
+
+接下来就是安装和使用`jekyll`了
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
