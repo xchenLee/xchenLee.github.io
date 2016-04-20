@@ -18,4 +18,4 @@ github_username:  xchenLee
 
 # Build settings
 markdown: kramdown
-input: GFM
+#input: GFM
