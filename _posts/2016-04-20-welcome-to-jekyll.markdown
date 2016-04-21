@@ -19,7 +19,7 @@ categories: jekyll github
 
 {% highlight ruby %}
 gem install jekyll   //jekyll
-gem install kramdown //markdown 解析包
+gem install kramdown //markdown解析包
 gem install pygments.rb //代码高亮
 gem install liquid
 {% endhighlight %}
@@ -27,7 +27,8 @@ gem install liquid
 3.安装完成之后，进入之前五个步骤中拉取repository的文件夹，执行命令
 
 {% highlight ruby %}
-jekyll new . --force //直接覆盖五个步骤中新建的index.html
+//直接覆盖五个步骤中新建的index.html
+jekyll new . --force
 //如果是想新建一个空的
 jekyll new name
 //然后编辑
