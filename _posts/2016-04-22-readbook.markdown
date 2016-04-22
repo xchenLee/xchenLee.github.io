@@ -5,4 +5,16 @@ date: 2016-04-22 14:38:00 +0800
 categories: Core Animation , iOS
 ---
 # 读书笔记 of `iOS Core Animation Advanced Techniques`
-## Layer
+
+## Layers and Views
+> 首先理解UIView的概念，View就是矩形物体用来展示内容，比如图片，文字，视频，并处理用户交互的东西,它可以嵌套形成一个层级结构，并控制子View的位置。
+> CALayer，和UIView概念类似，它有可以进行动画和变化的属性和方法，最大的区别是,CALayer不处理交互,因为它不在乎 `responder chain` iOS实现事件在view层级中传递的机制。
+
+UIView有一个CALayer类型的属性layer,UIView负责创建和维护layer，并且确保View的层级和layer tree同步保持一致.那么问题来了，为什么苹果要维护两个并行的层级结构呢，一个不就行了。原因是为了区分责任，iOS移动设备和Mac OS不同,多点触控和鼠标键盘，所以有了UIKit，UIView以及 AppKit, NSView.
+
+CALayer是UIView 的内部实现。但直接使用UIView却少灵活性，我们只能选择更底层的东西。使用CALayer的优势。
+1.阴影，圆角，颜色边
+2.3D transfom ,positioning
+3.添加非矩形边界
+4.透明度的遮罩
+5.多步非线性动画
